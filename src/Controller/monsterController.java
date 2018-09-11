@@ -4,16 +4,21 @@ import model.MarshmallowMonster;
 
 public class monsterController
 {
-	//Data member section
-	//Declaration section
+	//-----------Data member section------------
+	
+	
+	
+	//-----------Declaration section--------------
+	
+	
+	
 	private MarshmallowMonster myMonster;
 	
 	//Constructors Initialize data members!
 	public monsterController()
 	{
-		myMonster = new MarshmallowMonster();
+		myMonster = new MarshmallowMonster("Porple");
 	}
-	
 	
 	public void start()
 	{
