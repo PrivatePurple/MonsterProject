@@ -18,19 +18,25 @@ public class MarshmallowMonster
 	
 	public MarshmallowMonster(String name)
 	{
-		this.name = name;
+		this.name = name;	
 	}
 	
-	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNoses, int arms)
+	public MarshmallowMonster(String name, double legCount, int eyeCount, boolean hasNose, int arms)
 	{
-		
+		this.hasNoses = hasNose;
+		this.legCount = legCount;
+		this.eyeCount = eyeCount;
+		this.armcount = arms;
 	}
 
 	
 	
 	public String toString()
 	{
-		String description = "";
+		String description = "This monster is named " + name 
+								+ " and it has " + legCount + " legs..."
+								+ " it's favorite thing to say is:"
+								+ " taxation is theft." ;
 		
 		return description;
 	}
