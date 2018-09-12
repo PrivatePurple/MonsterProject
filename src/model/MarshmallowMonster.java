@@ -12,8 +12,7 @@ public class MarshmallowMonster
 	
 	public MarshmallowMonster()
 	{
-		//Default constructor
-		//Generally boring and not as helpful
+		//Default constructor - Generally boring and not helpful
 	}
 	
 	public MarshmallowMonster(String name)
@@ -29,6 +28,55 @@ public class MarshmallowMonster
 		this.armcount = arms;
 	}
 
+	public String getName()
+	{
+		return name; //Return is the immediate exit point for a method. As soon as the return is hit, the rest of the code is ignored.
+	}
+	
+	public double getLegCount()
+	{
+		return legCount;
+	}
+	
+	public int getEyeCount()
+	{
+		return eyeCount;
+	}
+	
+	public boolean getHasNose()
+	{
+		return hasNoses;
+	}
+	
+	public int getArms()
+	{
+		return armcount;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setLegCount(double legCount)
+	{
+		this.legCount = legCount;
+	}
+	
+	public void setEyeCount(int eyeCount)
+	{
+		this.eyeCount = eyeCount;
+	}
+
+	public void setHasNose(boolean hasNose)
+	{
+		this.hasNoses = hasNose;
+	}
+	
+	public void setArms(int arms)
+	{
+		this.armcount = arms;
+	}
 	
 	
 	public String toString()
