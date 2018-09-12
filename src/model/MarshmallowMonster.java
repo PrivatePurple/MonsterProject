@@ -82,9 +82,7 @@ public class MarshmallowMonster
 	public String toString()
 	{
 		String description = "This monster is named " + name 
-								+ " and it has " + legCount + " legs..."
-								+ " it's favorite thing to say is:"
-								+ " taxation is theft." ;
+								+ " and it has " + legCount + " legs...";
 		
 		return description;
 	}
