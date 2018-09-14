@@ -49,23 +49,15 @@ public class monsterController
 		userMonster.setArms(Integer.parseInt(response));
 		System.out.println("Your monster has "+ userMonster.getArms()+" arms.");
 	
-		System.out.println("Should your monster have a nose?");
-		String answer;
-		boolean yn;
-
-		System.out.println("y/n");
-		while (true) {
-		  answer = in.nextLine().trim().toLowerCase();
-		  if (answer.equals("y")) {
-		    yn = true;
-		    break;
-		  } else if (answer.equals("n")) {
-		    yn = false;
-		    break;
-		  } else {
-		     System.out.println("Sorry, I didn't catch that. Please answer y/n");
-		  }
-		}
-			
+		System.out.println("Does your monster have a nose?");
+		if(response.toLowerCase().equals("yes") || response.toLowerCase().equals("true"))
+				{
+					userMonster.setHasNose(true);
+					System.out.println("Your monster has a nose! Hooray!");
+				}
+					else if(response.toLowerCase().equals("no") || response.toLowerCase().equals("false")) 
+				{
+					System.out.println("Your monster has no nose.");
+				}
 	}
 }
