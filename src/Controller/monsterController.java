@@ -91,7 +91,6 @@ public class monsterController
 				{
 					JOptionPane.showMessageDialog(null,"Your monster has no nose.");
 				}
-	
 	}
 		public boolean validInt(String maybeInt)
 		{
@@ -125,3 +124,5 @@ public class monsterController
 			return isValid;
 		}
 }
+//ayy lmao
+
